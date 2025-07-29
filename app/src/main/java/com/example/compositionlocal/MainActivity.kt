@@ -4,10 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.compositionlocal.ui.view.FirstComposable
+import com.example.compositionlocal.ui.view.SixComposable
 import com.example.compositionlocal.ui.view.local.LocalUser
 import com.example.compositionlocal.ui.view.local.LocalUserName
 import com.example.compositionlocal.ui.view.model.User
@@ -22,10 +27,18 @@ class MainActivity : ComponentActivity() {
             ) {
                 Column (
                     modifier = Modifier
-                        .fillMaxSize()
+                        .width(300.dp)
                 ){
                     FirstComposable()
                 }
+            }
+
+            Column (
+                modifier = Modifier
+                    .width(300.dp)
+            ){
+                Spacer(modifier = Modifier.height(300.dp))
+                SixComposable()
             }
         }
     }

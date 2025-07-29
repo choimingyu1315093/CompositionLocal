@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -15,7 +16,7 @@ import com.example.compositionlocal.ui.view.local.LocalUser
 import com.example.compositionlocal.ui.view.local.LocalUserName
 
 @Composable
-fun FifthComposable(){
+fun SixComposable(){
     val userName = LocalUserName.current
     val user = LocalUser.current
 
@@ -27,7 +28,7 @@ fun FifthComposable(){
     ){
         Text(
             text = user.name,
-            modifier = Modifier.background(Color.Cyan).padding(30.dp)
+            modifier = Modifier.background(Color.Red).padding(30.dp)
         )
     }
 }
