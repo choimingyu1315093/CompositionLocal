@@ -5,5 +5,5 @@ import com.example.compositionlocal.ui.view.model.User
 
 val LocalUserName = compositionLocalOf { "LocalUserName" }
 val LocalUser = compositionLocalOf<User> {
-    User("LocalUser", 30)
+    User("dsfhgjkhadsjkfghsajkhjk", 30)
 }

@@ -26,7 +26,7 @@ fun FifthComposable(){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
-            text = user.name,
+            text = "${user.name}",
             modifier = Modifier.background(Color.Cyan).padding(30.dp)
         )
     }

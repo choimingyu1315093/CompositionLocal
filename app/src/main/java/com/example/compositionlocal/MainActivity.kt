@@ -12,7 +12,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.compositionlocal.ui.view.FirstComposable
-import com.example.compositionlocal.ui.view.SixComposable
+import com.example.compositionlocal.ui.view.SixthComposable
 import com.example.compositionlocal.ui.view.local.LocalUser
 import com.example.compositionlocal.ui.view.local.LocalUserName
 import com.example.compositionlocal.ui.view.model.User
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CompositionLocalProvider(
                 LocalUserName provides "최대리",
-                LocalUser provides User("최대리", 30)
+                LocalUser provides User("김대리", 30)
             ) {
                 Column (
                     modifier = Modifier
@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     .width(300.dp)
             ){
                 Spacer(modifier = Modifier.height(300.dp))
-                SixComposable()
+                SixthComposable()
             }
         }
     }
